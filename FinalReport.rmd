@@ -19,6 +19,10 @@ drugusers <- triUmp %>% filter(DrugUser=="yes")
 
 A new  preventative aides drug (triUmpsal) is under test in clinical trials. Consider only the DrugUsers, does this drug seem effective?  Hint - use dplyr to obtain that subpopulation with the filter command.
 
+$H_0$ There is no difference between the rate of infection between drug users who are given the placebo and those who are given the actual drug.
+$H_a$ There is a significant difference in infection rate between drug users who are given the placebo versus those who are given the actual drug.
+
+
 # Methods
 
 <!--Decide on your methods:  use "variable analysis" or other appropriate descriptors.  Make sure to choose at least one graphical method and at least one numerical method. Discuss what data manipulations may be needed for example subsetting or other binning procedures and what sort of graphical displays and inferential tools will be used!-->
@@ -57,6 +61,10 @@ colPerc(table1)
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+chisq.test(table1)
+fisher.test(table1)
+```
 
 # Discussion and Conclusion
 
