@@ -68,7 +68,7 @@ chisq.test(table1)
 fisher.test(table1)
 ```
 
-The very low p-values in the chi-squared test and fisher exact test(.0000001242 and .0000000423 respectively) indicate that the difference in infection rates is indeed statistically significant which means the drug is effective at reducing infection rates in 'drug users'and allows us to reject the null hypothesis. However the confidence interval of 0.23-0.53 is a bit lower than what would be desired for a preventative drug like a vaccine.
+The very low p-values in the chi-squared test and fisher exact test(.0000001242 and .0000000423 respectively) indicate that the difference in infection rates is indeed statistically significant which means the drug is effective at reducing infection rates in 'drug users' and allows us to reject the null hypothesis. However the confidence interval of 0.23-0.53 is a bit lower than what would be desired for a preventative drug like a vaccine.
 
 # Discussion and Conclusion
 
